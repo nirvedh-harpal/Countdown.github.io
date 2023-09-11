@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+           font-family: 'Josefin Sans', sans-serif;
+            margin-top: 50px;
+            background-image: url("bg.jpg");
+            background-repeat: no no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            color: aliceblue;
+
+        }
+
+        h1 {
+            font-size: 8rem;
+        }
+
+        .countdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .countdown-el {
+            text-align: center;
+        }
+
+        .countdown-el span {
+            font-size: 1.3rem;
+        }
+
+        .big-text {
+            font-size: 4rem;
+            line-height: 1;
+            margin: 10px;
+        }
+</style>
+
+</head>
+
+<body>
+    <div id="container">
+    <h1 >New Year</h1>
+
+    <div class="countdown">
+        <div class="countdown-el ">
+            <p class="big-text" id="days">0</p>
+            <span>Days</span>
+        </div>
+
+        <div class="countdown-el hours_c">
+            <p class="big-text" id="hours">0</p>
+            <span>Hours</span>
+        </div>
+        <div class=countdown-el mins_c">
+            <p class="big-text" id="mins">0</p>
+            <span>Mins</span>
+        </div>
+        <div class="countdown-el secs_c">
+            <p class="big-text" id="secs">0</p>
+            <span>Secs</span>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
